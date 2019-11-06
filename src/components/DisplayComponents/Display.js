@@ -1,5 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
+
+import "../../App.css";
 
 const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+
+  const [result] = useState(0);
+
+  return <div style = {{height: "80px",width: "400px"}}
+  className = "displayContainer">{result}</div>;
 };
+
+
+export default Display;
